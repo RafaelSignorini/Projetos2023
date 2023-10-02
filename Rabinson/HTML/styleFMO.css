@@ -1,0 +1,247 @@
+/* página 1 */
+body {
+    background-image: url(Imagens/background2.jpg);
+    background-size: cover;
+}
+
+.texto1 {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.imagem1 {
+    position: relative;
+    left: 32px;
+}
+
+.imagem2 {
+    position: relative;
+    left: 868px;
+}
+
+.texto2 {
+    font-size: 20px;
+    position: relative;
+    bottom: 640px;
+    width: 768px;
+    color: aliceblue;
+}
+
+.botao {
+    background-color: rgb(196, 228, 228);
+    border: none;
+    color: darkslategray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* página 2 */
+body {
+    background-image: url(Imagens/background2.jpg);
+    background-size: cover;
+}
+
+.texto3 {
+    font-size: 24px;
+    position: absolute;
+    width: 700px;
+    color: aliceblue;
+    left: 600px;
+}
+
+.imagem3 {
+    position: absolute;
+    left: 48px;
+}
+
+.imagem4 {
+    position: absolute;
+    left: 1506px;
+}
+
+.imagem5 {
+    position: absolute;
+    left: 48px;
+    bottom: 0px;
+}
+
+.imagem6 {
+    position: absolute;
+    left: 1506px;
+    bottom: 0px;
+}
+
+.texto4 {
+    font-size: 20px;
+    position: absolute;
+    width: 700px;
+    color: aliceblue;
+    left: 600px;
+    bottom: 540px;
+}
+
+.botao2 {
+    background-color: rgb(196, 228, 228);
+    border: none;
+    color: darkslategray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    bottom: -256px;
+    left: 48px;
+}
+
+.texto5 {
+    font-size: 20px;
+    position: absolute;
+    width: 700px;
+    color: aliceblue;
+    left: 600px;
+    bottom: 720px;
+}
+
+.botao3 {
+    background-color: rgb(196, 228, 228);
+    border: none;
+    color: darkslategray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    bottom: -256px;
+    right: 48px;
+}
+
+/* página 3 */
+body {
+    background-image: url(Imagens/background2.jpg);
+    background-size: cover;
+}
+
+.texto6 {
+    font-size: 24px;
+    position: absolute;
+    width: 700px;
+    color: aliceblue;
+    left: 600px;
+    bottom: 512px;
+}
+
+.botao4 {
+    background-color: rgb(196, 228, 228);
+    border: none;
+    color: darkslategray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    bottom: -256px;
+    left: 48px;
+}
+
+.imagem7 {
+    position: absolute;
+    left: 48px;
+    top: 48px;
+}
+
+.imagem8 {
+    position: absolute;
+    right: 48px;
+    top: 48px;
+}
+
+.imagem9 {
+    position: absolute;
+    left: 48px;
+    top: 608px;
+}
+
+.imagem10 {
+    position: absolute;
+    right: 48px;
+    top: 608px;
+}
+
+.imagem11 {
+    position: relative;
+    bottom: -512px;
+}
+
+.botao5 {
+    background-color: rgb(196, 228, 228);
+    border: none;
+    color: darkslategray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    bottom: -256px;
+    right: 48px;
+}
+
+/* página 4 */
+body {
+    background-image: url(Imagens/background2.jpg);
+    background-size: cover;
+}
+
+.texto7 {
+    font-size: 24px;
+    position: absolute;
+    width: 700px;
+    color: aliceblue;
+    left: 600px;
+    top: 256px;
+}
+
+.botao7 {
+    background-color: rgb(196, 228, 228);
+    border: none;
+    color: darkslategray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    bottom: -0px;
+    left: 48px;
+}
+
+.imagem12 {
+    position: absolute;
+    top: 400px;
+    left: 500px
+}
