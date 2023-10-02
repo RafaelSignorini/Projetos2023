@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+/* Estilos básicos */
+.texto-escrita {
+  white-space: nowrap; /* Impede quebrar a linha */
+  font-size: 24px; /* Tamanho da fonte */
+  font-family: monospace; /* Fonte monoespaçada para melhor visualização */
+}
+</style>
+</head>
+<body>
+  <div class="texto-escrita" id="texto">
+  </div>
+
+<script>
+// Texto que será escrito
+var textoCompleto = "Olá! Eu sou um efeito de escrita em JavaScript.";
+
+// Elemento HTML onde o texto será inserido
+var elementoTexto = document.getElementById("texto");
+
+// Função que simula a escrita do texto
+function escreverTexto(texto, elemento, intervalo) {
+  var caracteres = texto.split("");
+  var contador = 0;
+
+  var timer = setInterval(function() {
+    if (contador < caracteres.length) {
+      elemento.innerHTML += caracteres[contador];
+      contador++;
+    } else {
+      clearInterval(timer);
+    }
+  }, intervalo);
+}
+
+// Chamada da função para iniciar o efeito
+escreverTexto(textoCompleto, elementoTexto, 100); // O intervalo determina a velocidade da escrita (em milissegundos)
+</script>
+</body>
+</html>

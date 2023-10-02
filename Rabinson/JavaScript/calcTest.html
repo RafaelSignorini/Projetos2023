@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora da Lei de Coulomb</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .calculator {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+  <h1>Calculadora da Lei de Coulomb</h1>
+  <div class="calculator">
+    <label for="q1">Carga q1 (Coulombs):</label>
+    <input type="number" id="q1" step="any">
+    <br>
+    <label for="q2">Carga q2 (Coulombs):</label>
+    <input type="number" id="q2" step="any">
+    <br>
+    <label for="r">Distância r (metros):</label>
+    <input type="number" id="r" step="any">
+    <br>
+    <button onclick="calculateForce()">Calcular Força</button>
+    <br>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function calculateForce() {
+      const k = 8.9875 * Math.pow(10, 9); // Constante eletrostática
+      const q1 = parseFloat(document.getElementById('q1').value);
+      const q2 = parseFloat(document.getElementById('q2').value);
+      const r = parseFloat(document.getElementById('r').value);
+
+      if (!isNaN(q1) && !isNaN(q2) && !isNaN(r)) {
+        const force = k * (Math.abs(q1 * q2) / Math.pow(r, 2));
+        document.getElementById('result').innerHTML = `A força resultante é: ${force.toFixed(2)} N`;
+      } else {
+        document.getElementById('result').innerHTML = 'Por favor, insira valores válidos.';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript1</title>
+    <script type="text/javascript">
+        function enviar() {
+            pass;
+        }
+        function calcular() {
+            numero1 = parseInt(document.getElementById("num1").value);
+            numero2 = numero1 ** 3;
+            document.getElementById("resultado1").innerHTML = numero2;
+        }
+        function converterTemperatura() {
+            var fahrenheit = parseFloat(document.getElementById("temperatura").value);
+            var celsius = (fahrenheit - 32) * (5/9);
+            document.getElementById("resultado").innerHTML = "Temperatura em graus celsius = " + celsius;
+        }
+        function areaTriangulo() {
+            _base = parseFloat(document.getElementById("base").value);
+            _altura = parseFloat(document.getElementById("altura").value);
+            _areaTotal = (_base * _altura) /2;
+            document.getElementById("resultadoTriangulo").innerHTML = "Área do triângulo = " + _areaTotal;
+        }
+        function circulo() {
+            var raio = parseFloat(document.getElementById("raio").value);
+            var area = Math.PI * raio ** 2;
+            var perimetro = 2 * Math.PI * raio;
+            document.getElementById("resultado5").innerHTML = "A área do círculo é igual a: " + area.toFixed(2) + " e o perímetro é: " + perimetro.toFixed(2);
+        }
+        function beterraba(palavra) {
+            var palavra = document.getElementById("inputPalavra").value;
+            var comprimento2 = palavra.length;
+            document.getElementById("resultado4").innerHTML = "O comprimento da palavra é: " + comprimento2;
+        }
+        // function Verificar() {
+        //     email_correto = 'rafael@gmail.com'
+        //     senha_correta = 'qwerty'
+        //     if (document.getElementById('email') == email_correto && document.getElementById('senha')) {
+        //         innerHTML = 'Bem-vindo';
+        //     }
+        //     else {
+        //         innerHTML = 'tchau e bençõn';
+        //     }
+        // }
+
+    </script>
+</head>
+
+<body>
+    1. Escreva uma função em JavaScript que mostre na tela a mensagem “Bom dia,
+    Mundo!!!”.
+
+    <button onclick="alert('Bom dia, Mundo!!!')">Aperte Aqui</button>
+
+    <p>2. Escreva uma função que retorne o cubo de um número fornecido pelo
+    usuário.</p>
+
+    <p>Digite o numero: <input type="text" id="num1"></p>
+
+    <p id="resultado1"></p>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <p>3. Escreva uma função em JavaScript que realize a conversão de uma
+    temperatura fornecida em graus Fahrenheit (F) para Celsius (C).</p>
+    
+    <p>Dica: para converter uma temperatura em F para C, subtraia 32 da temperatura
+    e multiplique o resultado por 0,5556 (ou 5/9).</p>
+
+    <input type="text" id="temperatura" placeholder="Temperatura em Fahrenheit">
+
+    <button onclick="converterTemperatura();">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <p>4. Escreva uma função que retorne a área de um triângulo, a partir dos valores de base e altura fornecidos.</p>
+
+    <input type="text" id="base" placeholder="Valor da base do triângulo">
+
+    <input type="text" id="altura" placeholder="Valor da altura do triângulo">
+
+    <button onclick="areaTriangulo();">Calcular</button>
+
+    <p id="resultadoTriangulo"></p>
+
+    <p>5. Escreva uma função que encontre a área e o perímetro de um círculo, de acordo com o raio fornecido.</p>
+
+    Raio:
+
+    <input type="text" id="raio" placeholder="Raio do círculo">
+
+    <button onclick="circulo()">Calcular</button>
+
+    <p id="resultado5"></p>
+
+    <p>6. Escreva uma função que permita contar o número de vogais contidas em uma string fornecida pelo usuário.
+    Por exemplo, o usuário informa a string “Beterraba”, e a função retorna o número 4 (há 4 vogais nessa palavra).</p>
+    <p>ALTERAÇÃO: peça ao código para carcular o comprimento da palavra apenas.</p>
+
+    <input type="text" id="inputPalavra" placeholder="Digite a palavra" />
+
+    <button onclick="beterraba()">Calcular</button>
+    <p id="resultado4"></p>
+
+</body>
+
+</html>
+
+<!-- <form action="projetoFMO.html" method="">
+    Digite seu e-mail...
+    <br>
+    <input type="text" id="email" />
+    <br>
+<br>
+    Digite sua senha...
+    <br>
+    <input type="text" id="senha" />
+</form>
+<br>
+<button onclick="Verificar()">Verificar</button>
+<br> -->

@@ -1,0 +1,22 @@
+início
+
+inteiro ano
+inteiro anoNascimento
+inteiro idade
+
+	escrever "Digite o ano atual: "
+	ler ano
+	escrever "Digite seu ano de nascimento: "
+	ler anoNascimento
+
+	idade recebe ano - anoNascimento
+
+	Se (idade < 18)
+
+	escrever "Você não é habilitado para dirigir."
+
+	Se (idade >= 18)
+
+	escrever "Você é habilitado para dirigir."
+
+fim

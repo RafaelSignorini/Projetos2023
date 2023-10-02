@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<script>
+    function velocidadeMedia() {
+        _deltaS1 = parseFloat(document.getElementById("deltaS1").value);
+        _deltaT1 = parseFloat(document.getElementById("deltaT1").value);
+        document.getElementById("resultado1").innerHTML = _deltaS1 / _deltaT1;
+    }
+    function aceleracao() {
+        _deltaV2 = parseFloat(document.getElementById("deltaV2").value);
+        _deltaT2 = parseFloat(document.getElementById("deltaT2").value);
+        document.getElementById("resultado2").innerHTML = _deltaT2 / _deltaV2;
+    }
+    function forca() {
+        _massa3 = parseFloat(document.getElementById("massa3").value);
+        _aceleracao3 = parseFloat(document.getElementById("aceleracao3").value);
+        document.getElementById("resultado3").innerHTML = _massa3 * _aceleracao3;
+    }
+    function leiDeHooke() {
+        _constante4 = parseFloat(document.getElementById("constante4").value);
+        _deformacao4 = parseFloat(document.getElementById("deformacao4").value);
+        document.getElementById("resultado4").innerHTML = _constante4 * _deformacao4;
+    }
+    function trabalho() {
+        _forca5 = parseFloat(document.getElementById("forca5").value);
+        _distancia5 = parseFloat(document.getElementById("distancia5").value);
+        _anguloG5 = parseFloat(document.getElementById("anguloG5").value);
+        _anguloR5 = (_anguloG5 * Math.PI) / 180;
+        document.getElementById("resultado5").innerHTML = _forca5 * _distancia5 * Math.cos(_anguloR5);
+    }
+    function energiaCinetica() {
+        _massa6 = parseFloat(document.getElementById("massa6").value);
+        _velocidade6 = parseFloat(document.getElementById("velocidade6").value);
+        document.getElementById("resultado6").innerHTML = 0.5 * _massa6 * (_velocidade6 ** 2);
+    }
+    function energiaPotencial() {
+        _massa7 = parseFloat(document.getElementById("massa7").value);
+        _gravidade7 = parseFloat(document.getElementById("gravidade7").value);
+        _altura7 = parseFloat(document.getElementById("altura7").value);
+        document.getElementById("resultado7").innerHTML = _massa7 * _gravidade7 * _altura7;
+    }
+    function conservacaoEnergia() {
+        _energiaInicial8 = parseFloat(document.getElementById("energiaInicial8").value);
+        _trabalho8 = parseFloat(document.getElementById("trabalho8").value);
+        document.getElementById("resultado8").innerHTML = _trabalho8 + _energiaInicial8;
+    }
+    function momentoLinear () {
+        _massa9 = parseFloat(document.getElementById("massa9").value);
+        _velocidade9 = parseFloat(document.getElementeById("velocidade9").value);
+        document.getElementById("resultado9").innerHTML = _massa9 * _velocidade9;
+    }
+    function formulaPressao() {
+        _forca10 = parseFloat(document.getElementById("forca10").value);
+        _area10 = parseFloat(document.getElementById("area10").value);
+        document.getElementById("resultado10").innerHTML = _forca10 / _area10;
+    }
+    function leiCoulomb() {}
+    function leiSnell() {}
+    function leiKepler() {}
+    function fluxoMagnetico() {}
+    function formulaFrequencia() {}
+</script>
+<body>
+1. Fórmula da Velocidade Média:
+Velocidade Média = Δx / Δt
+
+2. Fórmula da Aceleração:
+Aceleração = Δv / Δt
+
+3. Fórmula da Força (Lei de Newton):
+Força = massa * aceleração
+
+4. Fórmula da Lei de Hooke (Força Elástica):
+Força Elástica = constante elástica * deformação
+
+5. Fórmula do Trabalho:
+Trabalho = força * distância * cos(θ)
+
+6. Fórmula da Energia Cinética:
+Energia Cinética = 0.5 * massa * velocidade²
+
+7. Fórmula da Energia Potencial Gravitacional:
+Energia Potencial = massa * gravidade * altura
+
+8. Fórmula da Lei da Conservação da Energia:
+Energia Inicial + Trabalho = Energia Final
+
+9. Fórmula do Momento Linear:
+Momento Linear = massa * velocidade
+
+10. Fórmula da Pressão:
+Pressão = força / área
+
+11. Fórmula da Lei de Coulomb (Força Elétrica):
+Força Elétrica = (k * |q₁ * q₂|) / r²
+
+12. Fórmula da Lei de Snell (Refração):
+n₁ * sen(θ₁) = n₂ * sen(θ₂)
+
+13. Fórmula da Lei de Kepler (Leis do Movimento Planetário):
+T² = (4π² * a³) / G * (m₁ + m₂)
+
+14. Fórmula do Fluxo Magnético (Lei de Gauss para o Magnetismo):
+Φ = B * A * cos(θ)
+
+15. Fórmula da Frequência (Ondas):
+Frequência = 1 / período
+</body>
+</html>

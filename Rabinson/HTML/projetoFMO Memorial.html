@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- demonstra que a linguagem será HTML -->
+<html>
+    <script>
+        function buttonFuntion() {
+            alert("O botão foi clicado!");
+        }
+    </script> <!-- Dentro da seção script, abri a função "function" e nomeei de "buttonFunction()"
+                e coloquei a tarefa "alert("O botão foi clicado!");" dentro de chaves -->
+    <head>
+        <title>
+            FMO Dragons
+        </title> <!-- Defini o título dentro da seção "title" -->
+        <style>
+            body {
+        background-image: url(Imagens/background2.jpg);
+        background-size: cover;
+    } /* Defina a imagem de fundo como Imagens/background2.jpg */
+            .texto1{
+                font-size: 40px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: white;
+            } /* Essa é a primeira função incluindo textos no corpo do site, definindo o tamanho com a função "size", o tipo da fonte com a função "font-family"
+                e a cor com a função "color" */
+            .imagem1{
+                position: relative;
+                left: 32px;
+            } /* Essa função serve para determinar a posição da imagem com "position: relative" e seu ponto de referência, como "left: 32px" */
+            .imagem2{
+                position: relative;
+                left:  868px;
+            }
+            .texto2{
+                font-size: 20px;
+                position: relative;
+                bottom: 640px;
+                width: 768px;
+                color: aliceblue;
+            } /* Essa função detalha mais as características do texto, pré-definindo sua posição com "position: relative;", o ponto de referência de sua posição
+                como "bottom: 640px;", o limite de espessura com "width: 768px" e sua cor com "color: aliceblue;" */
+            .botao{
+                background-color: rgb(196, 228, 228);
+                border: none;
+                color: darkslategray;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 24px;
+                margin: 4px 2px;
+                cursor: pointer;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <center> <p class="texto1"> Bem-vindo ao FMO Dragons!</p> </center>
+        <img class="imagem1" src="Imagens/PH_Rafael.png" width="500"; height="700";>
+        <img class="imagem2" src="Imagens/Maje.png" width="500"; height="700";>
+        <center> <p class="texto2"> Aqui no servidor FMO Dragons, você poderá fazer novos amigos e perder a paciência de vez em quando!
+        Jogue jogos e entre em calls divertas para se enturmar com o grupo! Este trabalho foi feito por Rafael Brito Signorini do 2°DS! </p> </center>
+        <center> <a href="fotosMembros.html">
+            <button onclick="buttonFuntion" class="botao"> Fotos dos membros </button> </center>
+        </a>
+    </body>
+</html>

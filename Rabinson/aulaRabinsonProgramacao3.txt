@@ -1,0 +1,135 @@
+1)
+início
+
+decimal numero
+
+	escrever "Digite o número: "
+	ler numero
+
+	Se (numero >= 0)
+		escrever "Este número é positivo."
+
+	Se (numero < 0)
+		escrever "Este número é negativo."
+
+fim
+
+2)
+início
+
+inteiro numero
+
+	escrever "Digite o número: "
+	ler numero
+
+	Se (numero %2)
+		escrever "Este número é impar."
+
+	Senão
+		escrever "Este número é par."
+
+fim
+
+3)
+início
+
+texto sexo
+
+	escrever "Digite F para gênero feminino ou M para gênero masculino: "
+	ler sexo
+
+	Se (sexo = F)
+		escrever "Seu gênero é feminino."
+
+	Se (sexo = M)
+		escrever "Seu gênero é masculino."
+
+	Senão
+		escrever "Sexo Inválido."
+
+fim
+
+4)
+início
+
+decimal nota1
+decimal nota2
+inteiro media
+
+	escrever "Digite sua primeira nota: "
+	ler nota1 
+	escrever "Digite sua segunta nota: "
+	ler nota2
+
+	media recebe (nota1 + nota2)/2
+
+	Se (media >= 7)
+		escrever "Aprovado."
+
+	Se (media < 7)
+		escrever "Reprovado."
+
+	Se (media = 10)
+		escrever "Aprovado com Distinção."
+
+fim
+
+5)
+início
+
+inteiro valor1
+inteiro valor2
+inteiro valor3
+
+	escrever "Digite o primeiro número: "
+	ler valor1
+	escrever "Digite o segundo número: "
+	ler valor2
+	escrever "Digite o terceiro número: "
+	ler valor3
+
+	Se (valor1 > valor2 e valor1 > valor3)
+		escrever "O maior número é o primeiro."
+
+	Se (valor2 > valor1 e valor2 > valor3)
+		escrever "O maior número é o segundo."
+
+	Se (valor3 > valor1 e valor3 > valor2)
+		escrever "O maior número é o terceiro."
+
+fim
+
+Desafio
+
+início
+
+inteiro valor1
+inteiro valor2
+inteiro valor3
+
+	escrever "Digite o primeiro número: "
+	ler valor1
+	escrever "Digite o segundo número: "
+	ler valor2
+	escrever "Digite o terceiro número: "
+	ler valor3
+
+	Se (valor1 > valor2 e valor1 > valor3 e valor2 > valor3)
+		escrever "A ordem descrescente entre os números é: valor1, valor2, valor3."
+
+	Se (valor2 > valor1 e valor2 > valor3 e valor1 > valor3)
+		escrever "A ordem descrescente entre os números é: valor2, valor1, valor3."
+
+	Se (valor3 > valor1 e valor3 > valor2 e valor1 > valor2)
+		escrever "A ordem descrescente entre os números é: valor3, valor1, valor2."
+
+	Se (valor3 > valor2 e valor3 > valor1 e valor2 > valor1)
+		escrever "A ordem descrescente entre os números é: valor3, valor2, valor1."
+
+	Se (valor1 > valor3 e valor1 > valor2 e valor3 > valor2)
+		escrever "A ordem descrescente entre os números é: valor1, valor3, valor2."
+
+	Se (valor2 > valor3 e valor2 > valor1 e valor3 > valor1)
+		escrever "A ordem descrescente entre os números é: valor2, valor3, valor1."
+
+fim

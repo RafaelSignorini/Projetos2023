@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Adivinhamento</title>
+    <script>
+        document.getElementById("gerarNumero").addEventListener("click", function() {
+            let min = 1;
+            let max = 100;
+            let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+            document.getElementById("numeroGerado").textContent = "Número aleatório: " + randomNum;
+            document.getElementById("resultado").textContext = "";
+        });
+        document.getElementById("verificarResultado").addEventListener("click", function() {
+    var valorEscrito = parseFloat(document.getElementById("valor").value);
+    var numeroGerado = parseFloat(document.getElementById("numeroGerado").textContent.split(":")[1]);
+
+    var resultadoElement = document.getElementById("resultado");
+
+    if (valorEscrito === numeroGerado) {
+        resultadoElement.innerHTML = "Parabéns! Você acertou!";
+        resultadoElement.classList.add("resposta2");
+    } else if (valorEscrito < numeroGerado) {
+        resultadoElement.innerHTML = "Tente um número maior.";
+        resultadoElement.classList.add("resposta2");
+    } else {
+        resultadoElement.innerHTML = "Tente um número menor.";
+        resultadoElement.classList.add("resposta2");
+    }
+});
+    </script>
+    <style>
+        .fundo{
+            width: 780px;
+            height: 880px;
+            position: absolute;
+            top: 4%;
+            left: 30%;
+            background-color: rgb(215, 227, 236);
+            z-index: -1;
+            opacity: 0.5;
+            border-radius: 5px;
+        }
+        .titulo1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 32px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .butao1{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(221, 15, 15, 0.3);
+            cursor: pointer;
+            transition: all 0.4s ease;
+            width: 300px;
+            height: 30px;            
+        }
+        .butao1:hover{
+            background-color: rgb(221, 15, 15, 0.7);
+            width: 350px;
+            height: 45px;
+        }
+        .butao2{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(221, 15, 15, 0.3);
+            cursor: pointer;
+            transition: all 0.4s ease;
+            width: 300px;
+            height: 30px;            
+        }
+        .butao2:hover{
+            background-color: rgb(221, 15, 15, 0.7);
+            width: 350px;
+            height: 45px;
+        }
+        .texto1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 512px;
+        }
+        .resposta1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            left: 57.5%;
+            transform: translate(-50%);
+            width: 512px;
+        }
+        .resposta2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 24px;
+            position: absolute;
+            top: 45%;
+            left: 5%;
+            transform: translate(-50%);
+            width: 512px;
+        }
+        .valor{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(221, 15, 15, 0.3);
+            cursor: pointer;
+            transition: all 0.4s ease;
+            width: 300px;
+            height: 30px;
+        }
+        .chute{
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(221, 15, 15, 0.3);
+            width: 260px;
+            height: 15px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <center class="titulo1">Bem-vindo ao jogo das 100 chances!</center>
+    <center class="texto1">Aperte o botão abaixo para receber um número aleatório, entre 1 e 100, e tente adivinhar seu valor!
+    caso você acerte, você vencerá o jogo! </center>
+    <!-- Há erros no código em que não sei resolver, por issos não funciona. -->
+    <button class="butao1" id="gerarNumero">Gerar número aleatório</button>
+    <p class="resposta1" id="numeroGerado"></p>
+    <!-- O código não verifica o valor, não apresenta resposta, e não verifica o número,
+    além de não comparar os valores gerado e recebido. -->
+    <input class="chute" type="number" id="valor" placeholder="Seu Chute">
+    <button class="butao2" id="verificarChute">Verificar</button>
+    <p class="resposta2" id="resultado"></p>
+
+    <div class="fundo"></div>
+</body>
+</html>
