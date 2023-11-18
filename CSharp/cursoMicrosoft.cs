@@ -1,3 +1,5 @@
+// Begginer C# exercises from Microsoft C# documentation
+
 decimal sophia1 = 93m;
 decimal sophia2 = 87m;
 decimal sophia3 = 98m;
