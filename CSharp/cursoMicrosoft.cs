@@ -1,4 +1,5 @@
 // Begginer C# exercises from Microsoft C# documentation
+// There are still issues with running C# in VSCode, however that will soon be fixed
 
 int currentAssignments = 5;
 
@@ -30,11 +31,6 @@ decimal sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
 decimal nicolasSum = nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5;
 decimal zahirahSum = zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5;
 decimal jeongSum = jeong1 + jeong2 + jeong3 + jeong4 + jeong5;
-
-Console.WriteLine("Sophia: " + sophiaSum);
-Console.WriteLine("Nicolas: " + nicolasSum);
-Console.WriteLine("Zahirah: " + zahirahSum);
-Console.WriteLine("Jeong: " + jeongSum);
 
 decimal sophiaScore = sophiaSum / currentAssignments;
 decimal nicolasScore = nicolasSum / currentAssignments;
