@@ -87,6 +87,7 @@ decimal gradePointAverage = (decimal) totalGradePoints / totalCreditHours;
 
 int leadingDigit = (int) gradePointAverage;
 int firstDigit = (int) (gradePointAverage * 10) % 10;
+int secondDigit = (int) (gradePointAverage * 100) % 10;
 
 Console.WriteLine($"{course1Name} {course1Grade} {course1Credit}");
 Console.WriteLine($"{course2Name} {course2Grade} {course2Credit}");
@@ -94,4 +95,4 @@ Console.WriteLine($"{course3Name} {course3Grade} {course3Credit}");
 Console.WriteLine($"{course4Name} {course4Grade} {course4Credit}");
 Console.WriteLine($"{course5Name} {course5Grade} {course5Credit}");
 
-Console.WriteLine($"Final GPA: {gradePointAverage}");
+Console.WriteLine($"Final GPA: {leadingDigit}.{firstDigit}{secondDigit}");
