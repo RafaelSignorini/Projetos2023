@@ -1,1 +1,0 @@
-# Este arquivo é extlusivamente para o curso de Python do Gustavo Guanabara.
