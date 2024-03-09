@@ -10,7 +10,7 @@ if genero == "M":
     alturaM = float(input("Digite sua altura: "))
     pesoM = alturaM * 72.7 - 58
     print(f"Seu peso médio deve ser: {pesoM}")
-if genero == "F":
+elif genero == "F":
     alturaF = float(input("Digite sua altura: "))
     pesoF = alturaF * 62.1 - 44.7
     print(f"Seu peso médio deve ser: {pesoF}")
